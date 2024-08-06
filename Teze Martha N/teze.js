@@ -18,8 +18,8 @@ console.log(text.startsWith("tall"));
 
  //slice
  let tendo="This is another dog.";
- console.log(tendo.slice("0,5"));
- console.log(tendo.slice("-1,-4"));
+ console.log(tendo.slice(0,5));
+ console.log(tendo.slice(-1,-4));
 
  //split
  let daddy= "I am a parent.";
