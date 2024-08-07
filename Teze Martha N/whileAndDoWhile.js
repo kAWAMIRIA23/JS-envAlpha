@@ -6,17 +6,19 @@ i--;
 }
 
 let sum=0;
-i=100;
-while(i>0){
-sum= sum+i;
-i--;
-}
-console.log(sum)
+i=1;
 
-let str="madam";
+while(i<=100){
+sum= sum+i;
+i++;
+}
+console.log(sum);
+
+let str="madam";  
 let check= true;
 i=0; 
-j= str.length-1;
+j= str.length-1; //m 0, a 1, d 2, a 3, m 4
+
 while(i<j){
   if(str[i]!==str[j]){
     check=false;
