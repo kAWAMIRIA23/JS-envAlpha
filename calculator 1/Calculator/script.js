@@ -17,7 +17,7 @@ class Calculator {
   }
 
   appendNumber(number){
-    this.currentOperand= this.currentOperand.tostring()+ number.toString
+    this.currentOperand= this.currentOperand.toString()+ number.toString()
 
   }
 
