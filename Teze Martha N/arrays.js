@@ -19,7 +19,6 @@ letters.sort(function (a,b){
   return b.localeCompare(a);
 })
 console.log(letters)
-//console.log(letters.join(t))
 
 //reverse
 let numbers=['10','25','36','55','75','100']
@@ -27,6 +26,34 @@ numbers.sort(function(a,b){
   return b.localeCompare(a);
 });
 console.log(numbers)
+
+//removing and adding
+//adds index at the end of array
+numbers.push('45');
+console.log(numbers);
+
+//unshift adds (can also remove)index at beginning of array
+cars.unshift('harrier');
+console.log(cars);
+
+/*splice adds index at specific points of the array.
+clothes.splice('scarf');
+console.log(clothes);*/
+
+//removes index from array
+//pop adds index at the end of array
+let removed = letters.pop();
+console.log(letters);
+console.log(removed);
+
+//shift
+//removes at the beginning
+let accessories=['shades','earings','bracelet','necklace']
+let removed2= accessories.shift();
+console.log(accessories);
+console.log(removed2);
+
+
 
 //Assignment
 //slice()
