@@ -1,14 +1,40 @@
 //for Loop Exercises
-
-	/*Print Even Numbers from 1 to 20
-	Write a for loop that prints all the even numbers between 1 and 20.
+ 
+	//Print Even Numbers from 1 to 20
+	//1.Write a for loop that prints all the even numbers between 1 and 20.
+	console.log("Even Numbers")
+	for(i=1; i<=20; i++){
+		if (i % 2=== 0){
+			console.log(i);
+	
+		}
+	} 
 	//Calculate the Factorial of a Number
-	Write a for loop that calculates the factorial of a given number n.
+	//2.Write a for loop that calculates the factorial of a given number n.
+	let n=7;
+	let factorial=1;
+
+	for( let i=1; i<=n; i++){
+		factorial *= i;
+
+	}
+	console.log(`The factorial of ${n} is ${factorial}`)
+	
 	//Reverse a String
-	•	Write a for loop that reverses a given string.
-	4.	Sum of Array Elements
-	•	Write a for loop that calculates the sum of all elements in an array.
-	5.	Print a Multiplication Table
+	//3.Write a for loop that reverses a given string.
+	let str="Was it a cat i saw";
+	let reversedStr ="";
+
+	for(let i= str.length-1; i>=0; i--){
+		reversedStr += str[i];
+	}
+	console.log(reversedStr);
+
+
+	//Sum of Array Elements
+	//4.Write a for loop that calculates the sum of all elements in an array.
+	
+	/*5.	Print a Multiplication Table
 	•	Write a for loop that prints the multiplication table of a given number n.
 	6.	Count the Number of Vowels in a String
 	•	Write a for loop that counts the number of vowels in a given string.
