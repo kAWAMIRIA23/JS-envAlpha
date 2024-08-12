@@ -87,5 +87,49 @@ for (let property in personTwo){
     }
 }
 
+//existance of properties
+let car = {
+    brand:'Toyota',
+    makeYear:2000,
+    colour:'Black'
+}
+
+console.log('brand' in car);
+console.log('year' in car);
+
+//nested objects
+let student = {
+    name:{
+        firstName:'Carlus',
+        lastName:'Innocent'
+    },
+    dOb:12052003,
+    indexNumber:'1555/001'
+}
+
+console.log(student.name.firstName);
+console.log(student.name['lastName']);
+console.log('Students name is, ${lastName}')
+console.log(`Students name is; ${student.name.firstName} ${student.name.lastName}`)
 
 
+//objects and functions
+// returning an object from a function
+function createPerson(firstName, lastName){
+    return {
+        firstName: firstName,
+        lastName: lastName
+    };
+}
+
+let student1 = createPerson('Mukasa', 'Fred');
+let student2 = createPerson('Aine', 'Carlus');
+console.log(student1, student2);
+
+//passing an object to a function
+function printPerson(st){
+    console.log(st.firstName + " " + st.lastName);
+}
+
+printPerson(student2);
+printPerson(student1);
