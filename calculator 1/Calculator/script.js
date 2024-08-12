@@ -16,6 +16,7 @@ class Calculator {
 
   }
 
+//the mistake was (    this.currentOperand= this.currentOperand.toString()+ number.tostring   )
   appendNumber(number){
     this.currentOperand= this.currentOperand.toString()+ number.toString()
 
